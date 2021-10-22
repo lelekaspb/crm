@@ -12,55 +12,55 @@ const modelController = (function () {
   const reference = {
     status: {
       new: {
-        display: "Новая",
+        display: "New",
         badgeClass: "badge-danger",
         attribute: "new",
       },
       process: {
-        display: "В работе",
+        display: "In process",
         badgeClass: "badge-warning",
         attribute: "process",
       },
       completed: {
-        display: "Завершена",
+        display: "Completed",
         badgeClass: "badge-success",
         attribute: "completed",
       },
       payment: {
-        display: "Ожидается оплата",
+        display: "Payment awaits",
         badgeClass: "badge-info",
         attribute: "payment",
       },
       canceled: {
-        display: "Отказ",
+        display: "Canceled",
         badgeClass: "badge-dark",
         attribute: "canceled",
       },
       archive: {
-        display: "Архив",
+        display: "Archive",
         badgeClass: "badge-secondary",
         attribute: "archive",
       },
     },
     product: {
       course_html: {
-        display: "Курс по верстке",
+        display: "HTML and CSS course",
         name: "course_html",
       },
       course_js: {
-        display: "Курс по JavaScript",
+        display: "JavaScript course",
         name: "course_js",
       },
       course_vue: {
-        display: "Курс по VUE JS",
+        display: "VUE JS course",
         name: "course_vue",
       },
       course_php: {
-        display: "Курс по PHP",
+        display: "PHP course",
         name: "course_php",
       },
       course_wordpress: {
-        display: "Курс по WordPress",
+        display: "WordPress course",
         name: "course_wordpress",
       },
     },

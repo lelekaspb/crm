@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>02 - Все заявки</title>
+    <title>02 - All bids</title>
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link
@@ -24,7 +24,7 @@
     <div class="left-panel blue-skin">
       <!-- Logo -->
       <div class="left-panel__logo">
-        <div class="left-panel__logo-title">CRM заявки</div>
+        <div class="left-panel__logo-title">CRM bids</div>
       </div>
       <!-- // Logo -->
       <!-- User -->
@@ -32,41 +32,41 @@
         <div class="left-panel__user-photo">
           <img src="img/avatars/avatar-128.jpg" alt="Avatar" />
         </div>
-        <div class="left-panel__user-name">Петр <br />Васильевич</div>
+        <div class="left-panel__user-name">John <br />Doe</div>
       </div>
       <!-- // User -->
       <!-- Navigation 1 -->
       <div class="left-panel__navigation">
-        <div class="left-panel__navigation-title">Заявки</div>
+        <div class="left-panel__navigation-title">Bids</div>
         <ul id="left-btn-group">
           <li>
             <!-- does not show the number according to filter, shows number of all apps regardless filter by product-->
             <a href="#" class="active" data-status="all"
-              >Все вместе
+              >All
               <div class="badge"></div
             ></a>
           </li>
           <li>
             <a href="#" data-status="new"
-              >Новые
+              >New
               <div class="badge"></div
             ></a>
           </li>
           <li>
             <a href="#" data-status="process"
-              >В работе
+              >In process
               <div class="badge"></div>
             </a>
           </li>
           <li>
             <a href="#" data-status="completed"
-              >Завершенные
+              >Completed
               <div class="badge"></div>
             </a>
           </li>
           <li>
             <a href="#" data-status="archive"
-              >Архив
+              >Archive
               <div class="badge"></div
             ></a>
           </li>
@@ -75,17 +75,17 @@
       <!-- // Navigation 1 -->
       <!-- Navigation 2 -->
       <div class="left-panel__navigation">
-        <div class="left-panel__navigation-title">Продукты</div>
+        <div class="left-panel__navigation-title">Products</div>
         <ul>
-          <li><a href="#">Активные</a></li>
-          <li><a href="#">Архив</a></li>
+          <li><a href="#">Active</a></li>
+          <li><a href="#">Archive</a></li>
         </ul>
       </div>
       <!-- // Navigation 2 -->
       <!-- Navigation 3 -->
       <div class="left-panel__navigation left-panel__navigation--no-line">
         <ul>
-          <li><a href="#">Выход</a></li>
+          <li><a href="#">Log out</a></li>
         </ul>
       </div>
       <!-- // Navigation 3 -->
@@ -95,7 +95,7 @@
     <!-- main-wrapper -->
     <div class="main-wrapper">
       <div class="container-fluid">
-        <div class="admin-heading-1">Все заявки</div>
+        <div class="admin-heading-1">All bids</div>
 
         <form action="" id="filter-form">
           <!-- <div class="form-row"> -->
@@ -108,16 +108,16 @@
                 role="group"
                 aria-label="..."
               >
-                <a href="#" class="btn btn-light" data-status="all">Все</a>
-                <a href="#" class="btn btn-light" data-status="new">Новые</a>
+                <a href="#" class="btn btn-light" data-status="all">All</a>
+                <a href="#" class="btn btn-light" data-status="new">New</a>
                 <a href="#" class="btn btn-light" data-status="process"
-                  >В работе</a
+                  >In process</a
                 >
                 <a href="#" class="btn btn-light" data-status="completed"
-                  >Завершенные</a
+                  >Completed</a
                 >
                 <a href="#" class="btn btn-light" data-status="archive"
-                  >Архив</a
+                  >Archive</a
                 >
               </div>
             </div>
@@ -125,12 +125,12 @@
             <!-- Col -->
             <div class="col">
               <select class="custom-select" id="inputGroupSelect01">
-                <option selected value="all">Все продукты</option>
-                <option value="course_html">Курс по верстке</option>
-                <option value="course_js">Курс по JavaScript</option>
-                <option value="course_vue">Курс по VUE JS</option>
-                <option value="course_php">Курс по PHP</option>
-                <option value="course_wordpress">Курс по WordPress</option>
+                <option selected value="all">All products</option>
+                <option value="course_html">HTML and CSS course</option>
+                <option value="course_js">JavaScript course</option>
+                <option value="course_vue">VUE JS course</option>
+                <option value="course_php">PHP course</option>
+                <option value="course_wordpress">WordPress course</option>
               </select>
             </div>
             <!-- // Col -->
@@ -141,12 +141,12 @@
           <thead>
             <tr>
               <th>ID</th>
-              <th>дата</th>
-              <th>продукт</th>
-              <th>имя</th>
+              <th>date</th>
+              <th>product</th>
+              <th>name</th>
               <th>email</th>
-              <th>телефон</th>
-              <th>статус</th>
+              <th>phone</th>
+              <th>status</th>
               <th></th>
             </tr>
           </thead>

@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>03 - Редактировать заявку</title>
+    <title>03 - Edit a bid</title>
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link
@@ -24,7 +24,7 @@
     <div class="left-panel blue-skin">
       <!-- Logo -->
       <div class="left-panel__logo">
-        <div class="left-panel__logo-title">CRM заявки</div>
+        <div class="left-panel__logo-title">CRM bids</div>
       </div>
       <!-- // Logo -->
       <!-- User -->
@@ -32,28 +32,28 @@
         <div class="left-panel__user-photo">
           <img src="img/avatars/avatar-128.jpg" alt="Avatar" />
         </div>
-        <div class="left-panel__user-name">Петр <br />Васильевич</div>
+        <div class="left-panel__user-name">John <br />Doe</div>
       </div>
       <!-- // User -->
       <!-- Navigation 1 -->
       <div class="left-panel__navigation">
-        <div class="left-panel__navigation-title">Заявки</div>
+        <div class="left-panel__navigation-title">Bids</div>
         <ul id="btn-group">
           <li>
             <a href="02-crm-all-bids.html?status=all" data-status="all"
-              >Все вместе
+              >All
               <div class="badge"></div
             ></a>
           </li>
           <li>
             <a href="02-crm-all-bids.html?status=new" data-status="new"
-              >Новые
+              >New
               <div class="badge"></div
             ></a>
           </li>
           <li>
             <a href="02-crm-all-bids.html?status=process" data-status="process"
-              >В работе
+              >In process
               <div class="badge"></div
             ></a>
           </li>
@@ -61,13 +61,13 @@
             <a
               href="02-crm-all-bids.html?status=completed"
               data-status="completed"
-              >Завершенные
+              >Completed
               <div class="badge"></div
             ></a>
           </li>
           <li>
             <a href="02-crm-all-bids.html?status=archive" data-status="archive"
-              >Архив
+              >Archive
               <div class="badge"></div
             ></a>
           </li>
@@ -76,17 +76,17 @@
       <!-- // Navigation 1 -->
       <!-- Navigation 2 -->
       <div class="left-panel__navigation">
-        <div class="left-panel__navigation-title">Продукты</div>
+        <div class="left-panel__navigation-title">Products</div>
         <ul>
-          <li><a href="#">Активные</a></li>
-          <li><a href="#">Архив</a></li>
+          <li><a href="#">Active</a></li>
+          <li><a href="#">Archive</a></li>
         </ul>
       </div>
       <!-- // Navigation 2 -->
       <!-- Navigation 3 -->
       <div class="left-panel__navigation left-panel__navigation--no-line">
         <ul>
-          <li><a href="#">Выход</a></li>
+          <li><a href="#">Log out</a></li>
         </ul>
       </div>
       <!-- // Navigation 3 -->
@@ -99,12 +99,10 @@
         <!-- row -->
         <div class="row justify-content-between align-items-center">
           <div class="col">
-            <div class="admin-heading-1">Работа с заявкой</div>
+            <div class="admin-heading-1">Edit the bid</div>
           </div>
           <div class="col text-right">
-            <a href="02-crm-all-bids.html" class="btn btn-link"
-              >Вернуться назад</a
-            >
+            <a href="02-crm-all-bids.html" class="btn btn-link">Go back</a>
           </div>
         </div>
         <!-- // row -->
@@ -115,34 +113,34 @@
             <form action="">
               <!-- card -->
               <div class="card mb-4">
-                <div class="card-header">Данные о заявке</div>
+                <div class="card-header">Bid info</div>
                 <div class="card-body">
                   <div class="row mb-3">
                     <div class="col-md-2">
                       <strong>ID:</strong>
                     </div>
-                    <div class="col" id="id">Заявка №<span>1</span></div>
+                    <div class="col" id="id">Bid №<span>1</span></div>
                   </div>
 
                   <div class="row mb-3">
                     <div class="col-md-2">
-                      <strong>Дата создания:</strong>
+                      <strong>Created:</strong>
                     </div>
                     <div class="col" id="date">2020-04-20 13:52:13</div>
                   </div>
 
                   <div class="row mb-3">
                     <div class="col-md-2">
-                      <strong>Продукт:</strong>
+                      <strong>Product:</strong>
                     </div>
                     <div class="col">
                       <select class="custom-select" id="inputGroupSelect02">
-                        <option value="course_html">Курс по верстке</option>
-                        <option value="course_js">Курс по JavaScript</option>
-                        <option value="course_vue">Курс по VUE JS</option>
-                        <option value="course_php">Курс по PHP</option>
+                        <option value="course_html">HTML and CSS course</option>
+                        <option value="course_js">JavaScript course</option>
+                        <option value="course_vue">VUE JS course</option>
+                        <option value="course_php">PHP course</option>
                         <option value="course_wordpress">
-                          Курс по WordPress
+                          WordPress course
                         </option>
                       </select>
                     </div>
@@ -150,7 +148,7 @@
 
                   <div class="row mb-3">
                     <div class="col-md-2">
-                      <strong>Имя:</strong>
+                      <strong>Name:</strong>
                     </div>
                     <div class="col">
                       <input
@@ -178,7 +176,7 @@
 
                   <div class="row mb-3">
                     <div class="col-md-2">
-                      <strong>Телефон:</strong>
+                      <strong>Phone:</strong>
                     </div>
                     <div class="col">
                       <input
@@ -192,16 +190,16 @@
 
                   <div class="row mb-3">
                     <div class="col-md-2">
-                      <strong>Статус заявки:</strong>
+                      <strong>Status:</strong>
                     </div>
                     <div class="col">
                       <select class="custom-select" id="inputGroupSelect01">
-                        <option selected="">Выберите...</option>
-                        <option value="new">Новая</option>
-                        <option value="process">В работе</option>
-                        <option value="payment">Ожидается оплата</option>
-                        <option value="completed">Завершена</option>
-                        <option value="canceled">Отказ</option>
+                        <option selected="">Choose...</option>
+                        <option value="new">New</option>
+                        <option value="process">In process</option>
+                        <option value="payment">Payment awaits</option>
+                        <option value="completed">Completed</option>
+                        <option value="canceled">Canceled</option>
                       </select>
                     </div>
                   </div>
@@ -215,7 +213,7 @@
                     type="button"
                     class="btn btn-primary"
                     id="save-changes"
-                    >Сохранить изменения</a
+                    >Save changes</a
                   >
                 </div>
                 <div class="col text-right">
@@ -224,7 +222,7 @@
                     type="button"
                     class="btn btn-dark"
                     id="delete"
-                    >Удалить в архив</a
+                    >Move to archive</a
                   >
                 </div>
               </div>

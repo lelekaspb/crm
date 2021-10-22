@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>01 - Форма</title>
+    <title>01 - Form</title>
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link
@@ -25,7 +25,7 @@
       <div class="container-fluid">
         <!-- header -->
         <div class="white-plate__header text-center">
-          <p class="white-plate__logo"><span>Форма</span> заявок</p>
+          <p class="white-plate__logo">Bids<span> form</span></p>
         </div>
         <!-- // header -->
 
@@ -38,7 +38,7 @@
           action="?=HOST?>payment-form.php"
           id="application_form"
         >
-          <label>Ваши данные:</label>
+          <label>Personal data:</label>
           <div class="form-group">
             <input
               type="text"
@@ -46,7 +46,7 @@
               id="input_name"
               autocomplete="on"
               class="form-control"
-              placeholder="Имя и Фамилия"
+              placeholder="Name and surname"
               required
             />
           </div>
@@ -57,7 +57,7 @@
               id="input_phone"
               autocomplete="on"
               class="form-control"
-              placeholder="Телефон"
+              placeholder="Phone"
             />
           </div>
           <div class="form-group">
@@ -72,24 +72,24 @@
             />
           </div>
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Продукт:</label>
+            <label for="exampleFormControlSelect1">Product:</label>
             <select
               name="product"
               id="select_product"
               class="form-control"
               id="exampleFormControlSelect1"
             >
-              <option value="course_html">Курс по верстке</option>
-              <option value="course_js">Курс по JavaScript</option>
-              <option value="course_vue">Курс по VUE JS</option>
-              <option value="course_php">Курс по PHP</option>
-              <option value="course_wordpress">Курс по WordPress</option>
+              <option value="course_html">HTML and CSS course</option>
+              <option value="course_js">JavaScript course</option>
+              <option value="course_vue">VUE JS course</option>
+              <option value="course_php">PHP course</option>
+              <option value="course_wordpress">WordPress course</option>
             </select>
           </div>
 
           <div class="form-group">
             <button type="submit" class="btn btn-lg btn-primary btn-block">
-              Оформить заявку
+              Order course
             </button>
           </div>
         </form>
@@ -98,14 +98,14 @@
     <!-- // white-plate -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
 
-    <!-- Тестовые данные -->
+    <!-- Test data -->
     <script src="js/test_data.js"></script>
 
-    <!-- Модули приложения -->
+    <!-- Modules -->
     <script src="js/model.js"></script>
     <script src="js/form_view.js"></script>
     <script src="js/form_controller.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

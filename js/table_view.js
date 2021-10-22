@@ -31,7 +31,7 @@ const tableViewController = (function (modelCtrl) {
                         <div class="badge badge-pill ${item.status.badgeClass}">${item.status.display}</div>
                       </td>
                       <td>
-                        <a href="03-crm-edit-bid.html?id=${item.id}">Редактировать</a>
+                        <a href="03-crm-edit-bid.html?id=${item.id}">Edit</a>
                       </td>
                     </tr> `;
 
