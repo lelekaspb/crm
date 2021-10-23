@@ -1,1 +1,1 @@
-CRM система выполненная по шаблону проектирования MVC (Model View Controller)
+CRM system implemented with the use of MVC pattern
